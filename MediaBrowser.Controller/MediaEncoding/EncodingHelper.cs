@@ -641,7 +641,7 @@ namespace MediaBrowser.Controller.MediaEncoding
                     && isNvdecDecoder)
                 {
                     // Fix for 'No decoder surfaces left' error. https://trac.ffmpeg.org/ticket/7562
-                    arg.Append("-hwaccel_output_format cuda -extra_hw_frames 3 -autorotate 0 ");
+                    arg.Append("-hwaccel_output_format cuda -extra_hw_frames 5 -autorotate 0 ");
                 }
 
                 if (state.IsVideoRequest
